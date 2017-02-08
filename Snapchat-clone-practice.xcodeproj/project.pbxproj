@@ -10,6 +10,7 @@
 		633EF4FC56C7B36A49F46A28 /* Pods_Snapchat_clone_practiceTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FF1D5B61B067F0A172B1FBAC /* Pods_Snapchat_clone_practiceTests.framework */; };
 		8486700C7E6752E4B25BE468 /* Pods_Snapchat_clone_practice.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87B1D4B9BF35E7D59505E490 /* Pods_Snapchat_clone_practice.framework */; };
 		E3D5E9ED7F9092DE11386DCF /* Pods_Snapchat_clone_practiceUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 283EE89734BDCB3B1FE1DDD2 /* Pods_Snapchat_clone_practiceUITests.framework */; };
+		FC1CC5161E4AB0D700CAD6F2 /* SnapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1CC5151E4AB0D700CAD6F2 /* SnapsViewController.swift */; };
 		FC4A86141E49AF4500ABDF04 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4A86131E49AF4500ABDF04 /* AppDelegate.swift */; };
 		FC4A86161E49AF4500ABDF04 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4A86151E49AF4500ABDF04 /* SignInViewController.swift */; };
 		FC4A86191E49AF4500ABDF04 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC4A86171E49AF4500ABDF04 /* Main.storyboard */; };
@@ -49,6 +50,8 @@
 		8E282FA47E66C46225EAD666 /* Pods-Snapchat-clone-practice.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat-clone-practice.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat-clone-practice/Pods-Snapchat-clone-practice.debug.xcconfig"; sourceTree = "<group>"; };
 		C79439A37AC39F9A4CA2388A /* Pods-Snapchat-clone-practiceTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat-clone-practiceTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat-clone-practiceTests/Pods-Snapchat-clone-practiceTests.release.xcconfig"; sourceTree = "<group>"; };
 		F322ED2B5C147FA8F676BEBC /* Pods-Snapchat-clone-practiceTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Snapchat-clone-practiceTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Snapchat-clone-practiceTests/Pods-Snapchat-clone-practiceTests.debug.xcconfig"; sourceTree = "<group>"; };
+		FC1CC5121E4AAC3900CAD6F2 /* Snapchat-clone-practice.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Snapchat-clone-practice.entitlements"; sourceTree = "<group>"; };
+		FC1CC5151E4AB0D700CAD6F2 /* SnapsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnapsViewController.swift; sourceTree = "<group>"; };
 		FC4A86101E49AF4500ABDF04 /* Snapchat-clone-practice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Snapchat-clone-practice.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC4A86131E49AF4500ABDF04 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC4A86151E49AF4500ABDF04 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -143,8 +146,10 @@
 		FC4A86121E49AF4500ABDF04 /* Snapchat-clone-practice */ = {
 			isa = PBXGroup;
 			children = (
+				FC1CC5121E4AAC3900CAD6F2 /* Snapchat-clone-practice.entitlements */,
 				FC4A86131E49AF4500ABDF04 /* AppDelegate.swift */,
 				FC4A86151E49AF4500ABDF04 /* SignInViewController.swift */,
+				FC1CC5151E4AB0D700CAD6F2 /* SnapsViewController.swift */,
 				FC4A86171E49AF4500ABDF04 /* Main.storyboard */,
 				FC4A861D1E49AF4500ABDF04 /* Assets.xcassets */,
 				FC4A861F1E49AF4500ABDF04 /* LaunchScreen.storyboard */,
@@ -252,6 +257,11 @@
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = Q9P9R7EZGN;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 					FC4A86261E49AF4500ABDF04 = {
 						CreatedOnToolsVersion = 8.2.1;
@@ -460,6 +470,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC1CC5161E4AB0D700CAD6F2 /* SnapsViewController.swift in Sources */,
 				FC4A86161E49AF4500ABDF04 /* SignInViewController.swift in Sources */,
 				FC4A861C1E49AF4500ABDF04 /* Snapchat_clone_practice.xcdatamodeld in Sources */,
 				FC4A86141E49AF4500ABDF04 /* AppDelegate.swift in Sources */,
@@ -615,6 +626,7 @@
 			baseConfigurationReference = 8E282FA47E66C46225EAD666 /* Pods-Snapchat-clone-practice.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Snapchat-clone-practice/Snapchat-clone-practice.entitlements";
 				DEVELOPMENT_TEAM = Q9P9R7EZGN;
 				INFOPLIST_FILE = "Snapchat-clone-practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -629,6 +641,7 @@
 			baseConfigurationReference = 429592DF4E534012217FF55B /* Pods-Snapchat-clone-practice.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "Snapchat-clone-practice/Snapchat-clone-practice.entitlements";
 				DEVELOPMENT_TEAM = Q9P9R7EZGN;
 				INFOPLIST_FILE = "Snapchat-clone-practice/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

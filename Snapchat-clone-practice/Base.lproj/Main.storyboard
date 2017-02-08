@@ -27,7 +27,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HTo-w6-GZE">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dgrozdanich@gmail.com" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="HTo-w6-GZE">
                                 <rect key="frame" x="112.5" y="125" width="150" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="vsi-OO-czk"/>
@@ -36,13 +36,12 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-uF-AU5">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="dgr29841" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hQg-uF-AU5">
                                 <rect key="frame" x="112.5" y="175" width="150" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="150" id="7GY-PP-2F3"/>
                                 </constraints>
                                 <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XBE-Gu-iqe">
@@ -68,11 +67,55 @@
                     <connections>
                         <outlet property="emailTextField" destination="HTo-w6-GZE" id="7Ub-5p-iB1"/>
                         <outlet property="passwordTextField" destination="hQg-uF-AU5" id="yFg-CH-G1v"/>
+                        <segue destination="Ec2-U7-zs5" kind="presentation" identifier="signInSegue" id="1gS-eX-RdX"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="117.59999999999999" y="123.68815592203899"/>
+        </scene>
+        <!--Snaps View Controller-->
+        <scene sceneID="hY8-BS-r0m">
+            <objects>
+                <viewController id="BpS-bm-v10" customClass="SnapsViewController" customModule="Snapchat_clone_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="WVG-Wr-4WK"/>
+                        <viewControllerLayoutGuide type="bottom" id="831-FR-PaF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="v1a-4s-VvM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="BBh-oZ-Dtc">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="xKy-mv-X0B">
+                            <connections>
+                                <action selector="logoutTapped:" destination="BpS-bm-v10" id="s7C-Xs-K61"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="f3D-eK-foa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1633" y="124"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="7vl-0f-x5e">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Ec2-U7-zs5" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="7ln-2S-Xvd">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BpS-bm-v10" kind="relationship" relationship="rootViewController" id="unE-hf-XUo"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lev-85-Jzr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="852" y="124"/>
         </scene>
     </scenes>
 </document>
