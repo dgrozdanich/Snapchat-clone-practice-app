@@ -22,6 +22,7 @@
 		FC4A86451E49B2A000ABDF04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4A86441E49B2A000ABDF04 /* GoogleService-Info.plist */; };
 		FC4A86461E49B2A000ABDF04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4A86441E49B2A000ABDF04 /* GoogleService-Info.plist */; };
 		FC4A86471E49B2A000ABDF04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4A86441E49B2A000ABDF04 /* GoogleService-Info.plist */; };
+		FC6933631E4BBF0700B2C628 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6933621E4BBF0700B2C628 /* PictureViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +68,7 @@
 		FC4A86361E49AF4500ABDF04 /* Snapchat_clone_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapchat_clone_practiceUITests.swift; sourceTree = "<group>"; };
 		FC4A86381E49AF4500ABDF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC4A86441E49B2A000ABDF04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FC6933621E4BBF0700B2C628 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		FF1D5B61B067F0A172B1FBAC /* Pods_Snapchat_clone_practiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat_clone_practiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -150,6 +152,7 @@
 				FC4A86131E49AF4500ABDF04 /* AppDelegate.swift */,
 				FC4A86151E49AF4500ABDF04 /* SignInViewController.swift */,
 				FC1CC5151E4AB0D700CAD6F2 /* SnapsViewController.swift */,
+				FC6933621E4BBF0700B2C628 /* PictureViewController.swift */,
 				FC4A86171E49AF4500ABDF04 /* Main.storyboard */,
 				FC4A861D1E49AF4500ABDF04 /* Assets.xcassets */,
 				FC4A861F1E49AF4500ABDF04 /* LaunchScreen.storyboard */,
@@ -474,6 +477,7 @@
 				FC4A86161E49AF4500ABDF04 /* SignInViewController.swift in Sources */,
 				FC4A861C1E49AF4500ABDF04 /* Snapchat_clone_practice.xcdatamodeld in Sources */,
 				FC4A86141E49AF4500ABDF04 /* AppDelegate.swift in Sources */,
+				FC6933631E4BBF0700B2C628 /* PictureViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
