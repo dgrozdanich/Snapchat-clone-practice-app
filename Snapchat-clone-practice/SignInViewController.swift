@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class SignInViewController: UIViewController {
 
@@ -21,6 +23,15 @@ class SignInViewController: UIViewController {
 
     
     @IBAction func turnUpTapped(_ sender: Any) {
+        FIRAuth.auth()?.signIn(withEmail: emailTextField.text!, password: passwordTextField.text!, completion: { (user, error) in
+            print ("We tried to sign in")
+            if error != nil {
+                print("Hey we have an error:\(error)")
+            } else {
+                print("Signed in Succesfully")
+            }
+        })
+        
     }
 
 

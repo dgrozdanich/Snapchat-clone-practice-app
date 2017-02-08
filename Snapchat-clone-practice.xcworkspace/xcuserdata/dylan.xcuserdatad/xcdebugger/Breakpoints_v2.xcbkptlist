@@ -10,11 +10,27 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Snapchat-clone-practice/SignInViewController.swift"
-            timestampString = "508203019.461917"
+            timestampString = "508209399.915846"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "47"
+            endingLineNumber = "47">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Snapchat-clone-practice/SignInViewController.swift"
+            timestampString = "508209345.893556"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "26"
-            endingLineNumber = "26">
+            endingLineNumber = "26"
+            landmarkName = "turnUpTapped(_:)"
+            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

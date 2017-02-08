@@ -6,7 +6,10 @@ target 'Snapchat-clone-practice' do
   use_frameworks!
 
   # Pods for Snapchat-clone-practice
-pod ‘Firebase’
+pod 'Firebase'
+pod 'Firebase/Auth'
+pod 'Firebase/Database'
+pod 'Firebase/Storage'
 
   target 'Snapchat-clone-practiceTests' do
     inherit! :search_paths
