@@ -6,15 +6,16 @@
 //  Copyright © 2017 Dylan. All rights reserved.
 //
 
+
 import UIKit
 
 class SelectUserViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
-
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // Do any additional setup after loading the view.
         self.tableView.dataSource = self
         self.tableView.delegate = self
@@ -28,6 +29,6 @@ class SelectUserViewController: UIViewController, UITableViewDelegate, UITableVi
         
         
     }
-
-
+    
+    
 }
