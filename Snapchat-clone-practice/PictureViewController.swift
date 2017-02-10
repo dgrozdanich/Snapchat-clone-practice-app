@@ -54,18 +54,23 @@ class PictureViewController: UIViewController, UIImagePickerControllerDelegate, 
         let  imagesFolder =
             FIRStorage.storage().reference().child("images")
         
-        let imageData = UIImagePNGRepresentation(imageView.image!)!
+        let imageData = UIImageJPEGRepresentation(imageView.image!, 0.1)!
         
         
-        imagesFolder.child("images.png").put(imageData, metadata: nil) { (metadata, error) in
+        
+        imagesFolder.child("\(NSUUID().uuidString).jpeg").put(imageData, metadata: nil) { (metadata, error) in
             print("We tried to upload!")
             if error != nil {
                 print("We Had an error:\(error)")
             } else {
+                
+                print(metadata?.downloadURL() as Any)
+                
+                
                 self.performSegue(withIdentifier: "selectUserSegue", sender: nil)
             }
         }}
-        
+    
         
        
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

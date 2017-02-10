@@ -170,10 +170,10 @@
             </objects>
             <point key="canvasLocation" x="2340" y="123.68815592203899"/>
         </scene>
-        <!--View Controller-->
+        <!--Select User View Controller-->
         <scene sceneID="OQN-RM-2xb">
             <objects>
-                <viewController id="I7z-Wg-wP4" sceneMemberID="viewController">
+                <viewController automaticallyAdjustsScrollViewInsets="NO" id="I7z-Wg-wP4" customClass="SelectUserViewController" customModule="Snapchat_clone_practice" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="cjv-yR-AcJ"/>
                         <viewControllerLayoutGuide type="bottom" id="rAJ-Kx-bZQ"/>
@@ -181,8 +181,23 @@
                     <view key="view" contentMode="scaleToFill" id="Pqt-2r-gae">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NPV-4w-uLl">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rAJ-Kx-bZQ" firstAttribute="top" secondItem="NPV-4w-uLl" secondAttribute="bottom" id="Rw2-h8-5rs"/>
+                            <constraint firstAttribute="trailing" secondItem="NPV-4w-uLl" secondAttribute="trailing" id="Sxy-mg-bz4"/>
+                            <constraint firstItem="NPV-4w-uLl" firstAttribute="top" secondItem="cjv-yR-AcJ" secondAttribute="bottom" id="sJ2-5c-y6i"/>
+                            <constraint firstItem="NPV-4w-uLl" firstAttribute="leading" secondItem="Pqt-2r-gae" secondAttribute="leading" id="zTr-rA-nu8"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="NPV-4w-uLl" id="e6A-aI-oRv"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="M4O-ty-dYq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
