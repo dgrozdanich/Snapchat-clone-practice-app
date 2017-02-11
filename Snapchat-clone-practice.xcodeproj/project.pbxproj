@@ -22,6 +22,7 @@
 		FC4A86451E49B2A000ABDF04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4A86441E49B2A000ABDF04 /* GoogleService-Info.plist */; };
 		FC4A86461E49B2A000ABDF04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4A86441E49B2A000ABDF04 /* GoogleService-Info.plist */; };
 		FC4A86471E49B2A000ABDF04 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FC4A86441E49B2A000ABDF04 /* GoogleService-Info.plist */; };
+		FC5BDBB71E4EDCBC00A3AE80 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5BDBB61E4EDCBC00A3AE80 /* User.swift */; };
 		FC6933631E4BBF0700B2C628 /* PictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC6933621E4BBF0700B2C628 /* PictureViewController.swift */; };
 		FC7541D31E4DCB1800B0597B /* SelectUserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC7541D21E4DCB1800B0597B /* SelectUserViewController.swift */; };
 /* End PBXBuildFile section */
@@ -69,6 +70,7 @@
 		FC4A86361E49AF4500ABDF04 /* Snapchat_clone_practiceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapchat_clone_practiceUITests.swift; sourceTree = "<group>"; };
 		FC4A86381E49AF4500ABDF04 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FC4A86441E49B2A000ABDF04 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+		FC5BDBB61E4EDCBC00A3AE80 /* User.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FC6933621E4BBF0700B2C628 /* PictureViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PictureViewController.swift; sourceTree = "<group>"; };
 		FC7541D21E4DCB1800B0597B /* SelectUserViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectUserViewController.swift; sourceTree = "<group>"; };
 		FF1D5B61B067F0A172B1FBAC /* Pods_Snapchat_clone_practiceTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Snapchat_clone_practiceTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -129,6 +131,7 @@
 			isa = PBXGroup;
 			children = (
 				FC4A86121E49AF4500ABDF04 /* Snapchat-clone-practice */,
+				FC5BDBB91E4EDCFA00A3AE80 /* Models */,
 				FC4A862A1E49AF4500ABDF04 /* Snapchat-clone-practiceTests */,
 				FC4A86351E49AF4500ABDF04 /* Snapchat-clone-practiceUITests */,
 				FC4A86111E49AF4500ABDF04 /* Products */,
@@ -150,12 +153,9 @@
 		FC4A86121E49AF4500ABDF04 /* Snapchat-clone-practice */ = {
 			isa = PBXGroup;
 			children = (
+				FC5BDBB81E4EDCE500A3AE80 /* ViewControllers */,
 				FC1CC5121E4AAC3900CAD6F2 /* Snapchat-clone-practice.entitlements */,
 				FC4A86131E49AF4500ABDF04 /* AppDelegate.swift */,
-				FC4A86151E49AF4500ABDF04 /* SignInViewController.swift */,
-				FC1CC5151E4AB0D700CAD6F2 /* SnapsViewController.swift */,
-				FC6933621E4BBF0700B2C628 /* PictureViewController.swift */,
-				FC7541D21E4DCB1800B0597B /* SelectUserViewController.swift */,
 				FC4A86171E49AF4500ABDF04 /* Main.storyboard */,
 				FC4A861D1E49AF4500ABDF04 /* Assets.xcassets */,
 				FC4A861F1E49AF4500ABDF04 /* LaunchScreen.storyboard */,
@@ -182,6 +182,26 @@
 				FC4A86381E49AF4500ABDF04 /* Info.plist */,
 			);
 			path = "Snapchat-clone-practiceUITests";
+			sourceTree = "<group>";
+		};
+		FC5BDBB81E4EDCE500A3AE80 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				FC4A86151E49AF4500ABDF04 /* SignInViewController.swift */,
+				FC1CC5151E4AB0D700CAD6F2 /* SnapsViewController.swift */,
+				FC6933621E4BBF0700B2C628 /* PictureViewController.swift */,
+				FC7541D21E4DCB1800B0597B /* SelectUserViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		FC5BDBB91E4EDCFA00A3AE80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC5BDBB61E4EDCBC00A3AE80 /* User.swift */,
+			);
+			name = Models;
+			path = "Snapchat-clone-practice";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -482,6 +502,7 @@
 				FC7541D31E4DCB1800B0597B /* SelectUserViewController.swift in Sources */,
 				FC4A86141E49AF4500ABDF04 /* AppDelegate.swift in Sources */,
 				FC6933631E4BBF0700B2C628 /* PictureViewController.swift in Sources */,
+				FC5BDBB71E4EDCBC00A3AE80 /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
