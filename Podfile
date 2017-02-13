@@ -10,7 +10,7 @@ pod 'Firebase'
 pod 'Firebase/Auth'
 pod 'Firebase/Database'
 pod 'Firebase/Storage'
-
+pod 'SDWebImage'
   target 'Snapchat-clone-practiceTests' do
     inherit! :search_paths
     # Pods for testing
