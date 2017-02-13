@@ -6,6 +6,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -114,11 +115,56 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="vcw-eB-sNg" id="njz-11-7ob"/>
+                        <segue destination="rN1-fX-y46" kind="show" identifier="viewSnapsSegue" id="Vz4-G6-9vM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="f3D-eK-foa" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1633" y="124"/>
+        </scene>
+        <!--View Snaps View Controller-->
+        <scene sceneID="u7c-6a-0vT">
+            <objects>
+                <viewController id="rN1-fX-y46" customClass="ViewSnapsViewController" customModule="Snapchat_clone_practice" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="82v-S1-tRh"/>
+                        <viewControllerLayoutGuide type="bottom" id="q5b-b7-BIw"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="h7n-Rj-J00">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a Label!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jCi-k3-jMJ">
+                                <rect key="frame" x="26" y="636" width="323" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="adi-pR-LzV">
+                                <rect key="frame" x="26" y="74" width="323" height="552"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jCi-k3-jMJ" firstAttribute="leading" secondItem="h7n-Rj-J00" secondAttribute="leadingMargin" constant="10" id="CPu-BF-c0G"/>
+                            <constraint firstItem="adi-pR-LzV" firstAttribute="top" secondItem="82v-S1-tRh" secondAttribute="bottom" constant="10" id="Cjl-Vm-NoN"/>
+                            <constraint firstItem="jCi-k3-jMJ" firstAttribute="leading" secondItem="h7n-Rj-J00" secondAttribute="leadingMargin" constant="10" id="ExR-Ur-1za"/>
+                            <constraint firstItem="adi-pR-LzV" firstAttribute="leading" secondItem="h7n-Rj-J00" secondAttribute="leadingMargin" constant="10" id="KW0-VT-3Wa"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jCi-k3-jMJ" secondAttribute="trailing" constant="10" id="UIv-Ju-8sU"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="jCi-k3-jMJ" secondAttribute="trailing" constant="10" id="W5A-Qm-aUI"/>
+                            <constraint firstItem="jCi-k3-jMJ" firstAttribute="top" secondItem="adi-pR-LzV" secondAttribute="bottom" constant="10" id="fCD-SB-E8l"/>
+                            <constraint firstItem="q5b-b7-BIw" firstAttribute="top" secondItem="jCi-k3-jMJ" secondAttribute="bottom" constant="10" id="oDa-vE-zIK"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="adi-pR-LzV" secondAttribute="trailing" constant="10" id="xLF-GG-s1x"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="adi-pR-LzV" id="hgI-U4-hwt"/>
+                        <outlet property="label" destination="jCi-k3-jMJ" id="ncR-ay-uDs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MFv-Bc-MBt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1633" y="819"/>
         </scene>
         <!--Picture View Controller-->
         <scene sceneID="wTE-sG-7HO">
