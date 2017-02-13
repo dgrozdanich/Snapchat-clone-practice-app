@@ -34,7 +34,7 @@ class SnapsViewController: UIViewController, UITableViewDelegate, UITableViewDat
          snap.from = (snapshot.value! as AnyObject)["from"] as! String
     snap.descrip = (snapshot.value! as AnyObject)["description"] as! String
        snap.key = snapshot.key
-            
+            snap.uuid = (snapshot.value! as AnyObject)["uuid"] as! String
             
          self.snaps.append(snap)
             
